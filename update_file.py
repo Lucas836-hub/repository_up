@@ -2,7 +2,10 @@
 # github : https://github.com/Lucas836-hub/
 # instagram : @lucas_git
 
-# se auto atualizar
+# se auto atualizar ok
+# ver a defazagem de tempo do github = pegar localizaco , ver o deley do pais
+# barra de progresso e tamanho do arquivo
+# VERIFICAR PASTAS NO GITHUB    
 
 import os
 from datetime import datetime
@@ -64,12 +67,13 @@ def check_atualizacao(url):
 def passagem_hora(h1,h2):
     # h1 = hora do ultimo up do github
     # h2 = hora do ultimo up dos arquivos locais
-    #print("github ",h1)
-    #print("arquivo ",h2)
+    print("github ",h1)
+    print("arquivo ",h2)
     if int(int(h1[0])-int(h2[0])) > 0 or int(int(h1[1])- int(h2[1])) > 0 and int(int(h1[0])-int(h2[0])) >= 0 or int(int(h1[1])- int(h2[1])) >= 0 and int(int(h1[0])-int(h2[0])) >= 0 and int(int(h1[2])-int(h2[2])) > 0 :
-        #print(f"passagem hora  {int(h1[0])-int(h2[0])} {int(int(h1[1])-int(h2[1]))} {int(int(h1[2])-int(h2[2]))} True")
+        print(f"passagem hora  {int(h1[0])-int(h2[0])} {int(int(h1[1])-int(h2[1]))} {int(int(h1[2])-int(h2[2]))} True")
         return True
     else:
+        print(f"passagem hora  {int(h1[0]) - int(h2[0])} {int(int(h1[1]) - int(h2[1]))} {int(int(h1[2]) - int(h2[2]))} False")
         return False
 
 def pasta_up(comand):
@@ -111,10 +115,11 @@ def passagem_tempo(a, b, c=0):
     num = [int(data[0] + data[1] + data[2] + data[3]), int(data[5] + data[6] ),int(data[8] + data[9])]
     num2 = [int(data_atual[0] + data_atual[1] + data_atual[2] + data_atual[3]), int(data_atual[5] + data_atual[6] ),int(data_atual[8] + data_atual[9])]
     resp = [num[2] - num2[2], num[1] - num2[1], num[0] - num2[0]]
-    if (resp[0] < c and resp[1] <= 0 or resp[2] < 0 or resp[1] < 0):
-        #print(f"passagem tempo arquivo {a} github {b} = {resp[0]} {resp[1]} {resp[2]}")
+    if (resp[0] < c and resp[1] <= 0 or resp[2] < 0 or resp[1] < 0 and resp[2] <= 0):
+        print(f"passagem tempo arquivo {a} github {b} = {resp[0]} {resp[1]} {resp[2]}")
         return True
     else:
+        print(f"passagem tempo arquivo {a} github {b} = {resp[0]} {resp[1]} {resp[2]} False")
         return False
 
 # n_del = lista de arquivos que nao poderam ser excluidos ex: banco de dados , arquivos txt com dados
