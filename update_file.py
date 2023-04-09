@@ -159,8 +159,6 @@ def passagem_tempo(a, b, c=0):
         #print(f"passagem tempo arquivo {a} github {b} = {resp[0]} {resp[1]} {resp[2]} False")
         return False
 
-# n_del =
-# url =
 def atualizar(url,n_del=[]):
     """
     Vai atualizar os arquivos locais com base na url passada.
