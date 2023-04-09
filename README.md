@@ -4,7 +4,7 @@
 
 # <div align="center"> *Atualizador de GitHub*  </div>
 
-## Descriço :
+## Descrição :
 Um script em python criado para atualizar repositorios que foram feito downloads locais de modo automatico.
 Também podendo atualizar ou baixar bibliotecas.
 
