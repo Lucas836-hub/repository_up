@@ -11,7 +11,7 @@ Também podendo atualizar ou baixar bibliotecas.
 ## Download :
       git clone https://github.com/Lucas836-hub/repository_up
 
-## Instalacao dos requerimentos
+## Instalação dos requerimentos
       cd repository_up && python3 -m pip install -r requirements.txt
 
 ## Como usar 
@@ -37,7 +37,7 @@ Também podendo atualizar ou baixar bibliotecas.
                                        
           update_file.check_atualizacao("https://github.com/Lucas836-hub/repository_up")
                                                                                        
-4 - Use a funcao "update_file.atualizar()" para que haja uma verificação de arquivos e sua posterior atualização
+4 - Use a funço "update_file.atualizar()" para que haja uma verificação de arquivos e sua posterior atualização
                                           
           update_file.atualizar("https://github.com/Lucas836-hub/repository_up")
                                                                                
