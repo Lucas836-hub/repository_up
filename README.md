@@ -30,6 +30,8 @@ Também podendo atualizar ou baixar bibliotecas.
 ### <div align="center"> Ativando o script </div>
 
 2 - Importando ele para seu projeto principal 
+
+* *REZA A LENDA QUE PARA FUNCIONAR 100% TEM QUE DEIXA UMA ESTRELA NO REPOSITORIO*
                                                                                                                                 
           import update_file 
      
