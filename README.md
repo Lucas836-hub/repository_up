@@ -26,7 +26,6 @@ Também podendo atualizar ou baixar bibliotecas.
       urllib3
       beautifulsoup4
       html5lib
-      wget
 
 ### <div align="center"> Ativando o script </div>
 
