@@ -26,6 +26,7 @@ Também podendo atualizar ou baixar bibliotecas.
       urllib3
       beautifulsoup4
       html5lib
+      wget
 
 ### <div align="center"> Ativando o script </div>
 
@@ -35,15 +36,15 @@ Também podendo atualizar ou baixar bibliotecas.
                                                                                                                                 
           import update_file 
      
-3 - Invoque a função "check_atualizacao()" para ver se houve alguma atualização do repositorio , Caso tenha alguma atualização você poderá forçar ela ou perguntar se o usuário quer atualizar  exemplo :
+3 - Invoque a função "*check_atualizacao()*" para ver se houve alguma atualização do repositorio , Caso tenha alguma atualização você poderá forçar ela ou perguntar se o usuário quer atualizar  exemplo :
                                        
           update_file.check_atualizacao("https://github.com/Lucas836-hub/repository_up")
                                                                                        
-4 - Use a funço "update_file.atualizar()" para que haja uma verificação de arquivos e sua posterior atualização
+4 - Use a funço "*update_file.atualizar()*" para que haja uma verificação de arquivos e sua posterior atualização
                                           
           update_file.atualizar("https://github.com/Lucas836-hub/repository_up")
                                                                                
-Há em "update_file.atualizar()" uma segunda opcao , na qual pode ser passada uma lista com arquivos que nao queira que seja atualizado 
+Há em "*update_file.atualizar()*" uma segunda opcao , na qual pode ser passada uma lista com arquivos que nao queira que seja atualizado 
 ex : banco de dados, arquivos txt contendo dados , etc ...
 
                                
@@ -52,7 +53,7 @@ ex : banco de dados, arquivos txt contendo dados , etc ...
 <img src="https://user-images.githubusercontent.com/70550900/216852887-c45997b2-5283-4b59-9b36-929687d5e4c1.png" width="800px" " />
 </div>
 
-5 - Caso seu script use python você poderá usar a função "instalador_biblioteca(arq=None)" para atualizar ou instalar automaticamente 
+5 - Caso seu script use python você poderá usar a função "*instalador_biblioteca(arq=None)*" para atualizar ou instalar automaticamente 
 as bibliotecas necessárias , por padrão será usado o requiriments.txt para instalar , Mas pode ser passado o nome do arquivo para a consuta.
 
       instalador_biblioteca()
